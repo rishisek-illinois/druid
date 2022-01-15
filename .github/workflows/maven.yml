@@ -24,5 +24,5 @@ jobs:
         cache: maven
     - name: Test Compile
       run: mvn test-compile
-#     - name: Test w/ Nondex
-#       run: mvn edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.alibaba.druid.bvt.utils.JdbcUtilsTest#test_curd
+    - name: Test
+      run: mvn test -Dtest=com.alibaba.druid.bvt.utils.JdbcUtilsTest#test_curd
